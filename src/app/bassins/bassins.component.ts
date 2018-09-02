@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BassinsComponent implements OnInit {
 
-  images: Array = [
+  images = [
     {id: 1, src: "../../assets/bassins/1_Panneaux_A.jpg"},
     {id: 2, src: "../../assets/bassins/2_Panneaux_B.jpg"},
     {id: 3, src: "../../assets/bassins/3_Panneaux_CDE.jpg"},
