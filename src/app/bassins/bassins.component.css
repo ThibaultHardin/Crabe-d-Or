@@ -1,0 +1,22 @@
+.carousel-imgs img {
+    height: 90vh;
+}
+
+.carousel-thumbnail {
+    z-index: 100;
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-thumbnail__item {
+    cursor: pointer;
+}
+
+.carousel-thumbnail__img {
+    width: 80px;
+    height: 60px;
+}

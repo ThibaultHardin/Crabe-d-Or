@@ -1,0 +1,27 @@
+<app-top-navbar></app-top-navbar>
+
+<ngb-carousel class="carousel-imgs" *ngIf="images" [activeId]="activeSliderId">
+    <ng-template ngbSlide>
+        <img [src]="images[0].src">
+    </ng-template>
+    <ng-template ngbSlide>
+        <img [src]="images[1].src">
+    </ng-template>
+    <ng-template ngbSlide>
+        <img [src]="images[2].src">
+    </ng-template>
+    <ng-template ngbSlide>
+        <img [src]="images[3].src">
+    </ng-template>
+</ngb-carousel>
+
+<ul class="carousel-thumbnail">
+    <li class="carousel-thumbnail__item list-inline-item" *ngFor="let photo of images" (click)="cycleToSlide(photo)">
+        <a class="selected">
+            <img class="carousel-thumbnail__img" [src]="photo.src">
+        </a>
+    </li>
+</ul>
+
+<app-bot-navbar></app-bot-navbar>
+

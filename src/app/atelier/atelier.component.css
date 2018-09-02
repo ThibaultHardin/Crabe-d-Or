@@ -1,0 +1,10 @@
+.bg {
+    background-image: url("../../assets/atelier/3_MF_+_OF.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 2400px;
+
+    margin-top: 5em;
+}
