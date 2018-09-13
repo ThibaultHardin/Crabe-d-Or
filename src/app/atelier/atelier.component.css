@@ -1,10 +1,8 @@
 .bg {
     background-image: url("../../assets/atelier/Atelier_en_construction.jpg");
 
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 2400px;
-
-    margin-top: 5em;
+    height: 180vh;
 }
