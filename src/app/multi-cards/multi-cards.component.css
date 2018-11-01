@@ -1,7 +1,9 @@
 .multi-card {
+    overflow-y: auto;
+    top: 0%;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
-    display:flex;
+    display: flex;
     flex-direction: row;
 }

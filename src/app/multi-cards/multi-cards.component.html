@@ -1,4 +1,4 @@
 <div class="multi-card">
-  <app-card source="{{photoA}}"></app-card>
-  <app-card source="{{photoB}}"></app-card>
+  <app-card source="{{ sourceA !== undefined ? sourceA : photoA }}"></app-card>
+  <app-card source="{{ sourceB !== undefined ? sourceB : photoB }}"></app-card>
 </div>

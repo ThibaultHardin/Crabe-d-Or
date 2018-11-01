@@ -1,3 +1,6 @@
+<app-multi-cards *ngIf="showContacter" sourceA="{{'../../assets/SW_Contact/A_Contact.jpg'}}" sourceB="{{'../../assets/SW_Contact/B_Contact.jpg'}}"></app-multi-cards>
+<app-multi-cards *ngIf="showAPropos" sourceA="{{'../../assets/SW_A_Propos/A_propos.jpg'}}" sourceB="{{'../../assets/SW_A_Propos/B_propos.jpg'}}"></app-multi-cards>
+
 <nav class="navbar navbar-expand navbar-light fixed-bottom bot-navbar">
   <ul class="navbar-nav ml-auto">
 
@@ -12,13 +15,13 @@
     </li>
 
     <li class="nav-item dropdown navbar-elem">
-      <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link" href="javascript:void(0)" (click)="switchShowAPropos()" aria-haspopup="true" aria-expanded="false">
         À propos
       </a>
     </li>
 
     <li class="nav-item dropdown navbar-elem">
-      <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link" href="javascript:void(0)" (click)="switchShowContacter()" aria-haspopup="true" aria-expanded="false">
         Contacter
       </a>
     </li>
