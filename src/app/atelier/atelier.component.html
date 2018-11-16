@@ -1,7 +1,18 @@
-<app-top-navbar></app-top-navbar>
+<app-top-navbar xmlns=""></app-top-navbar>
 
-<div class="bg" (click)="displayCards($event)">
-  <app-multi-cards *ngIf="showCard"></app-multi-cards>
+<div (click)="hideAll()">
+  <!--<img class="bg-img" usemap="#image-map" src="../../assets/atelier/OF-OT.jpg">-->
+  <img class="bg-img" usemap="#image-map" src="../../assets/atelier/Atelier_en_construction.jpg">
+  <app-multi-cards *ngIf="showChaise" sourceA="{{sourceChaiseA}}" sourceB="{{sourceChaiseB}}"></app-multi-cards>
 </div>
+
+<map name="image-map">
+  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="576,437,546,411" shape="rect">
+  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="624,390,685,430" shape="rect">
+  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="693,456,726,503" shape="rect">
+  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="614,543,724,575" shape="rect">
+  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="784,566,824,607" shape="rect">
+  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="839,470,988,504" shape="rect">
+</map>
 
 <app-bot-navbar></app-bot-navbar>
