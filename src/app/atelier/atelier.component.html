@@ -1,18 +1,51 @@
 <app-top-navbar xmlns=""></app-top-navbar>
 
 <div (click)="hideAll()">
-  <!--<img class="bg-img" usemap="#image-map" src="../../assets/atelier/OF-OT.jpg">-->
   <img class="bg-img" usemap="#image-map" src="../../assets/atelier/MF-MT-OF-OT.jpg">
-  <app-multi-cards *ngIf="showChaise" sourceA="{{sourceChaiseA}}" sourceB="{{sourceChaiseB}}"></app-multi-cards>
+  <app-multi-cards *ngIf="showCard" sourceA="{{sourceA}}" sourceB="{{sourceB}}"></app-multi-cards>
 </div>
 
 <map name="image-map">
-  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="576,437,546,411" shape="rect">
-  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="624,390,685,430" shape="rect">
-  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="693,456,726,503" shape="rect">
-  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="614,543,724,575" shape="rect">
-  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="784,566,824,607" shape="rect">
-  <area target="" alt="chaise" title="chaise" (click)="displayChaise()" coords="839,470,988,504" shape="rect">
+
+  <area target="" alt="Panier A" title="Panier A" (click)="displayPanier()" coords="412,1158,447,1197" shape="rect">
+  <area target="" alt="Panier B" title="Panier B" (click)="displayPanier()" coords="711,1144,742,1178" shape="rect">
+  <area target="" alt="Panier C" title="Panier C" (click)="displayPanier()" coords="395,1279,451,1306" shape="rect">
+  <area target="" alt="Panier D" title="Panier D" (click)="displayPanier()" coords="352,1300,409,1330" shape="rect">
+  <area target="" alt="Panier E" title="Panier E" (click)="displayPanier()" coords="491,1261,523,1322" shape="rect">
+  <area target="" alt="Panier F" title="Panier F" (click)="displayPanier()" coords="405,1362,456,1408" shape="rect">
+  <area target="" alt="Panier G" title="Panier G" (click)="displayPanier()" coords="351,1447,432,1481" shape="rect">
+
+  <area target="" alt="Amazones A" title="Amazones A" (click)="displayAmazones()" coords="900,611,943,670" shape="rect">
+  <area target="" alt="Amazones B" title="Amazones B" (click)="displayAmazones()" coords="789,715,842,753" shape="rect">
+  <area target="" alt="Amazones C" title="Amazones C" (click)="displayAmazones()" coords="901,706,948,750" shape="rect">
+
+  <area target="" alt="Coffre A" title="Coffre A" (click)="displayCoffre()" coords="910,362,948,399" shape="rect">
+
+  <area target="" alt="Girafe A" title="Girafe A" (click)="displayGirafe()" coords="576,437,546,411" shape="rect">
+  <area target="" alt="Girafe B" title="Girafe B" (click)="displayGirafe()" coords="624,390,685,430" shape="rect">
+  <area target="" alt="Girafe C" title="Girafe C" (click)="displayGirafe()" coords="693,456,726,503" shape="rect">
+  <area target="" alt="Girafe D" title="Girafe D" (click)="displayGirafe()" coords="614,543,724,575" shape="rect">
+  <area target="" alt="Girafe E" title="Girafe E" (click)="displayGirafe()" coords="784,566,824,607" shape="rect">
+  <area target="" alt="Girafe F" title="Girafe F" (click)="displayGirafe()" coords="581,650,598,685" shape="rect">
+  <area target="" alt="Girafe G" title="Girafe G" (click)="displayGirafe()" coords="641,631,664,664" shape="rect">
+  <area target="" alt="Girafe H" title="Girafe H" (click)="displayGirafe()" coords="642,673,665,701" shape="rect">
+  <area target="" alt="Girafe I" title="Girafe I" (click)="displayGirafe()" coords="894,1059,912,1084" shape="rect">
+  <area target="" alt="Girafe J" title="Girafe J" (click)="displayGirafe()" coords="894,1091,951,1111" shape="rect">
+
+  <area target="" alt="Tana A" title="Tana A" (click)="displayTana()" coords="880,343,976,424" shape="rect">
+  <area target="" alt="Tana B" title="Tana B" (click)="displayTana()" coords="719,823,758,865" shape="rect">
+
+  <area target="" alt="TTT A" title="TTT A" (click)="displayTTT()" coords="597,460,659,513" shape="rect">
+  <area target="" alt="TTT B" title="TTT B" (click)="displayTTT()" coords="597,916,640,959" shape="rect">
+  <area target="" alt="TTT C" title="TTT C" (click)="displayTTT()" coords="646,899,666,949" shape="rect">
+  <area target="" alt="TTT D" title="TTT D" (click)="displayTTT()" coords="855,972,883,1001" shape="rect">
+  <area target="" alt="TTT E" title="TTT E" (click)="displayTTT()" coords="730,1020,762,1048" shape="rect">
+  <area target="" alt="TTT F" title="TTT F" (click)="displayTTT()" coords="772,1021,817,1046" shape="rect">
+  <area target="" alt="TTT G" title="TTT G" (click)="displayTTT()" coords="456,1045,477,1063" shape="rect">
+  <area target="" alt="TTT H" title="TTT H" (click)="displayTTT()" coords="656,1120,704,1174" shape="rect">
+  <area target="" alt="TTT I" title="TTT I" (click)="displayTTT()" coords="766,1147,849,1171" shape="rect">
+  <area target="" alt="TTT J" title="TTT J" (click)="displayTTT()" coords="551,1176,601,1230" shape="rect">
+
 </map>
 
 <app-bot-navbar></app-bot-navbar>
