@@ -27,48 +27,69 @@ export class AtelierComponent implements OnInit {
         this.showCard = false;
     }
 
-    public displayAmazones() {
-        const num = Math.floor(Math.random() * 11) + 1;
-        this.sourceA = this.sourceAmazonesFolder + 'A' + num + this.sourceExt;
-        this.sourceB = this.sourceAmazonesFolder + 'B' + num + this.sourceExt;
+    public display(type) {
+        switch (type) {
+            case 'Amazones':
+                this.displayAmazones();
+                break;
+            case 'Panier':
+                this.displayPanier();
+                break;
+            case 'Tana':
+                this.displayTana();
+                break;
+            case 'Coffre':
+                this.displayCoffre();
+                break;
+            case 'Girafe':
+                this.displayGirafe();
+                break;
+            case 'TTT':
+                this.displayTTT();
+                break;
+        }
         this.showCard = true;
+    }
+
+    public displayAmazones() {
+        let num = Math.floor(Math.random() * 5) + 1;
+        this.sourceA = this.sourceAmazonesFolder + 'A' + num + this.sourceExt;
+        num = Math.floor(Math.random() * 7) + 1;
+        this.sourceB = this.sourceAmazonesFolder + 'B' + num + this.sourceExt;
     }
 
     public displayPanier() {
-        let num = Math.floor(Math.random() * 10) + 1;
-        this.sourceB = this.sourcePanierFolder + 'B' + num + this.sourceExt;
-        if (num > 8) {
-            num = Math.floor(Math.random() * 7) + 1;
-        }
+        let num = Math.floor(Math.random() * 7) + 1;
         this.sourceA = this.sourcePanierFolder + 'A' + num + this.sourceExt;
-        this.showCard = true;
+        num = Math.floor(Math.random() * 10) + 1;
+        this.sourceB = this.sourcePanierFolder + 'B' + num + this.sourceExt;
     }
 
     public displayTana() {
-        const num = Math.floor(Math.random() * 4) + 1;
+        let num = Math.floor(Math.random() * 5) + 1;
         this.sourceA = this.sourceTanaFolder + 'A' + num + this.sourceExt;
-        this.sourceB = this.sourceTanaFolder + 'B' + (num === 5 ? 4 : num) + this.sourceExt;
-        this.showCard = true;
+        num = Math.floor(Math.random() * 3) + 1;
+        this.sourceB = this.sourceTanaFolder + 'B' + num + this.sourceExt;
     }
 
     public displayCoffre() {
-        const num = Math.floor(Math.random() * 4) + 1;
+        let num = Math.floor(Math.random() * 3) + 1;
         this.sourceA = this.sourceCoffreFolder + 'A' + num + this.sourceExt;
+        num = Math.floor(Math.random() * 4) + 1;
         this.sourceB = this.sourceCoffreFolder + 'B' + num + this.sourceExt;
-        this.showCard = true;
     }
 
     public displayGirafe() {
-        const num = Math.floor(Math.random() * 11) + 1;
+        let num = Math.floor(Math.random() * 11) + 1;
         this.sourceA = this.sourceGirafeFolder + 'A' + num + this.sourceExt;
+        num = Math.floor(Math.random() * 7) + 1;
         this.sourceB = this.sourceGirafeFolder + 'B' + num + this.sourceExt;
-        this.showCard = true;
     }
 
     public displayTTT() {
-        const num = Math.floor(Math.random() * 11) + 1;
+        let num = Math.floor(Math.random() * 11) + 1;
         this.sourceA = this.sourceTTTFolder + 'A' + num + this.sourceExt;
-        this.sourceB = this.sourceTTTFolder + 'B' + (num === 12 ? 11 : num) + this.sourceExt;
-        this.showCard = true;
+        num = Math.floor(Math.random() * 10) + 1;
+        this.sourceB = this.sourceTTTFolder + 'B' + num + this.sourceExt;
     }
 }
